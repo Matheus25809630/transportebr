@@ -1,0 +1,26 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAfGpIMhTR04cdVptqHI1qw_dW_R-vqFXE",
+  authDomain: "transporte-br.firebaseapp.com",
+  projectId: "transporte-br",
+  storageBucket: "transporte-br.firebasestorage.app",
+  messagingSenderId: "108491945820",
+  appId: "1:108491945820:web:b279ee919f71fb3da8b399",
+  measurementId: "G-GQW74Q9KXR"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+const auth = getAuth(app);
+
+export { db, auth };
