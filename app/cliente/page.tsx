@@ -8,6 +8,8 @@ import { onAuthStateChanged, signOut, User } from "firebase/auth";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
+export const dynamic = "force-dynamic";
+
 interface Message {
   role: "bot" | "user";
   text: string;

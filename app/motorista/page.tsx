@@ -6,6 +6,8 @@ import { collection, query, where, onSnapshot, updateDoc, doc, DocumentData } fr
 import { onAuthStateChanged, signOut, User } from "firebase/auth";
 import { useRouter } from "next/navigation";
 
+export const dynamic = "force-dynamic";
+
 interface Oferta extends DocumentData {
   id: string;
   chave_acesso: string;

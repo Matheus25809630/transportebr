@@ -7,6 +7,8 @@ import { onAuthStateChanged, signOut, User } from "firebase/auth";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
+export const dynamic = "force-dynamic";
+
 interface Oferta extends DocumentData {
   id: string;
   id_embarcador: string;
